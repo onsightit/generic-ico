@@ -1,7 +1,7 @@
 {
-  "name": "Generic ICO",
+  "name": "Generic-ICO",
   "version": "2.0.0",
-  "description": "Generic ICO Site",
+  "description": "Generic-ICO Site",
   "private": true,
   "node-main": "./ico.js",
   "main": "/",
@@ -23,7 +23,7 @@
   },
   "window": {
     "show": true,
-    "title": "Generic ICO",
+    "title": "Generic-ICO",
     "icon": "./public/images/ico.png",
     "toolbar": false,
     "frame": true,

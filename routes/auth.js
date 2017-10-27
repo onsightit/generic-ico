@@ -25,7 +25,7 @@ module.exports = function(app, passport, coin) {
 			} else {
 				//console.log("DEBUG: req.session: " + JSON.stringify(req.session));
 				//console.log("DEBUG: req.user: " + JSON.stringify(req.user));
-				res.render('home.ejs'); // If logged in, allow access to Generic ICO
+				res.render('home.ejs'); // If logged in, allow access to Generic-ICO
 			}
 		}
 	});

@@ -1,13 +1,13 @@
 Token Sale FAQ
 
-1. When is the Generic ICO Token Distribution Event?
+1. When is the Generic-ICO Token Distribution Event?
 a. The sale begins on October 23rd at 10:00 am CST
 
 2. How many Generic tokens are being sold?
-a. Generic ICO is selling 400 million of the total 1 billion initial supply. See our whitepaper for details on the remaining supply.
+a. Generic-ICO is selling 400 million of the total 1 billion initial supply. See our whitepaper for details on the remaining supply.
 
 3. What is the price of a Generic token?
-a. The pricing is calculated in Tiers. The price for each Tier is equal to the total aggregate amount raised (in $USD)/150,000,000. For example, if Generic ICO raises $3 million in Tier 1(first 6 hours), the price is $0.02 ($3 million/150 million). In subsequent Tiers, the total raised is added to the numerator. If we raise $2,000,000 in Tier 2, the price will be calculated $5 million/150 million= $0.033 per token. Therefore, the price increases for each subsequent tier based on the total amount raised.
+a. The pricing is calculated in Tiers. The price for each Tier is equal to the total aggregate amount raised (in $USD)/150,000,000. For example, if Generic-ICO raises $3 million in Tier 1(first 6 hours), the price is $0.02 ($3 million/150 million). In subsequent Tiers, the total raised is added to the numerator. If we raise $2,000,000 in Tier 2, the price will be calculated $5 million/150 million= $0.033 per token. Therefore, the price increases for each subsequent tier based on the total amount raised.
 
 4. How long is each tier?
 a. Tier 1 is 6 hours long. Tier 2 is the 24 hours following the end of Tier 1. Tiers 3+ are each 48 hours long.

@@ -17,16 +17,16 @@
   "appHost": "localhost",
 
   // The app title, visible in browser window
-  "appTitle": "Generic ICO",
+  "appTitle": "Generic-ICO",
 
   // The app slogan
-  "appSlogan": "A Generic ICO Website!",
+  "appSlogan": "A Generic-ICO Website!",
 
   // The app description
-  "appDescription": "A short description of the Generic ICO goes here.",
+  "appDescription": "A short description of the Generic-ICO goes here.",
 
   // The copyright for the footer (uncomment to override default)
-  //"copyRight": "Copyright (c) 2016-2017, The Generic ICO developers. All rights reserved.",
+  //"copyRight": "Copyright (c) 2016-2017, The Generic-ICO developers. All rights reserved.",
 
   // Logo
   "logo": "/images/Logo.png",
@@ -83,7 +83,7 @@
   //      # ORIGINAL RewriteRule . /index.php [L]
   //      RewriteRule ./ /index.php [L]
   // Set to "" to allow the sub-folder 'ico' to be exposed for proxying.
-  // Set to "/ico" to chroot the node to /public/ico/ (Normal for stand-alone Generic ICO).
+  // Set to "/ico" to chroot the node to /public/ico/ (Normal for stand-alone Generic-ICO).
   "chRoot": "/ico",
 
   // Show stats in navigation
