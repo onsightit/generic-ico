@@ -1,0 +1,69 @@
+<!-- views/signup.ejs -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<title><%= settings.appTitle %> - Signup</title>
+		<% include partials/meta %>
+		<script>function onSubmit(token){document.getElementById("signup").submit();}</script>
+	</head>
+	<body role="document" class="intro">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M65DD63"	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<div id='wrapper'>
+			<div id='page-content-wrapper'>
+				<div id="main" class="container intro-form" role="main">
+					<div class="logo" style="background: url('<%= settings.logo %>') no-repeat top;"><span></span></div>
+					<div class="slogan"><%= settings.appSlogan %></div>
+					<div class="description"><%= settings.appDescription %></div>
+					<div class="well">
+						<h1 class="text-primary"><%= settings.appTitle %> - Signup</h1>
+						<!-- show any messages that come back with authentication -->
+						<% if (message != '') { %>
+							<div class="alert alert-danger"><%= message %></div>
+						<% } %>
+						<!-- SIGNUP FORM -->
+						<form class="form-horizontal" id="signup" role="form" action="signup" method="post">
+							<div class="form-group">
+								<div class="col-sm-6">
+									<input class="form-control" type="text" name="first_name" placeholder="Enter your first name.">
+								</div>
+								<div class="col-sm-6">
+									<input class="form-control" type="text" name="last_name" placeholder="Enter your last name.">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" type="text" name="email" placeholder="Enter your email address.">
+								</div>
+							</div>
+							<div class="form-group">
+								<!-- label class="control-label col-sm-2" for="password">Password</label -->
+								<div class="col-sm-12">
+									<input class="form-control" type="hidden" name="password" value="<%= pwgenerated %>" placeholder="Enter your password. (8+ characters including numbers and symbols)">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<pre style="max-height: 160px;"><%= terms %></pre>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-10" for="terms">I agree to the Terms and Conditions above.</label>
+								<input class="form-control-addon" type="checkbox" name="terms">
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-9 col-sm-3">
+									<button class="btn btn-primary btn-lg g-recaptcha" type="submit" data-sitekey="<%= settings.reCaptchaKey %>" data-callback="onSubmit" data-badge="bottomright" data-size="invisible">Next</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer text-with-background text-centered">
+				<p>Already have an account? <a href="login">Login here</a>. Or, go back to the <a href="<%= settings.chRoot %>/">Home</a> page.</p>
+			</div>
+		</div>
+	</body>
+</html>

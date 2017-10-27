@@ -1,0 +1,30 @@
+<div class="well" data-bind="with:home">
+    <!-- HOME -->
+    <h1 class="text-primary">Welcome to the <span data-bind="text: wallet.settings().appTitle"></span>, <span data-bind="text: first_name()"></span>!</h1>
+    <div class"countdown-sm" id="countdown-sm"></div>
+    <p>TOKEN SALE PROGRESS</p>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="400000000" data-bind="style: { width: tokenProgress() }">
+        <span data-bind="text: wallet.settings().coinSymbol"></span>: <span data-bind="text: tokens()"></span> / <span data-bind="text: totalTokens()"></span>
+        </div>
+    </div>
+	<h3 align="center" data-bind="text:statusMessage"></h3>
+    <!-- ko if: ready() -->
+    <p>SEND TO ADDRESSES:</p>
+    <div>
+        <p><img class="qrcode" data-bind="attr: { 'src': ethQrCode(),
+        'alt': ethaddress(),
+        'width': 185, 'height': 185 }" />
+        <b>ETH: <span data-bind="text: ethaddress()"></span></b></p>
+    </div>
+    <div>
+        <p><img class="qrcode" data-bind="attr: { 'src': btcQrCode(),
+        'alt': btcaddress(),
+        'width': 185, 'height': 185 }" />
+        BTC: <span data-bind="text: btcaddress()"></span></p>
+    </div>
+    <p><span class="small">* BTC/USD funds will be converted to ERC20 <span data-bind="text: wallet.settings().coinName"></span> tokens and sent to the ETH address identified in your profile.</span></p>
+    <!-- /ko -->
+    <p>&nbsp;</p>
+    <p>More information about the <span data-bind="text: wallet.settings().appTitle"></span> can be found on the 'FAQ' page.</p>
+</div>

@@ -1,0 +1,31 @@
+Token Sale FAQ
+
+1. When is the Generic ICO Token Distribution Event?
+a. The sale begins on October 23rd at 10:00 am CST
+
+2. How many Generic tokens are being sold?
+a. Generic ICO is selling 400 million of the total 1 billion initial supply. See our whitepaper for details on the remaining supply.
+
+3. What is the price of a Generic token?
+a. The pricing is calculated in Tiers. The price for each Tier is equal to the total aggregate amount raised (in $USD)/150,000,000. For example, if Generic ICO raises $3 million in Tier 1(first 6 hours), the price is $0.02 ($3 million/150 million). In subsequent Tiers, the total raised is added to the numerator. If we raise $2,000,000 in Tier 2, the price will be calculated $5 million/150 million= $0.033 per token. Therefore, the price increases for each subsequent tier based on the total amount raised.
+
+4. How long is each tier?
+a. Tier 1 is 6 hours long. Tier 2 is the 24 hours following the end of Tier 1. Tiers 3+ are each 48 hours long.
+
+5. How long will the sale last?
+a. The token sale will last up to 4 weeks.
+
+6. Are you offering any tokens ahead of time, such as a presale?
+a. A pre-sale Reservation Agreement is available to investors willing to commit a minimum amount of $25,000 USD. All entities that participate in the Reservation Agreement will have reserved their investment in the Tier 1 slot of the token sale.
+
+7. Where is the wallet information listed?
+a. The official wallet information will be posted on our website on the day of the sale. Please do not engage with anyone who provides you with a wallet address. Scammers have been widespread in other token sales.
+
+8. When will tokens be distributed?
+a. Tokens will be distributed 2 weeks after the sale is concluded.
+
+9. Is there a minimum or maximum investment amount?
+a. The minimum purchase amount is equal to $25 USD. There is no maximum.
+
+10. What currencies can be used to purchase SSH?
+a. Bitcoin, Ethereum and US Dollars.

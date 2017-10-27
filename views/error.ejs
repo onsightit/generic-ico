@@ -1,0 +1,34 @@
+<!-- views/error.ejs -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <title><%= settings.appTitle %> - Error!</title>
+        <% include partials/meta %>
+    </head>
+    <body role="document" class="intro">
+        <div id='wrapper'>
+            <div id='page-content-wrapper'>
+                <div id="main" class="container intro-form" role="main">
+					<div class="logo" style="background: url('<%= settings.logo %>') no-repeat top;"><span></span></div>
+					<div class="slogan"><%= settings.appSlogan %></div>
+					<div class="description"><%= settings.appDescription %></div>
+					<div class="well">
+                        <!-- show any status messages from server -->
+                    <% if (settings.status.length > 0) { %>
+                        <div class="alert alert-danger"><%= settings.status %></div>
+                    <% } %>
+                        <h2><%= settings.appTitle %> - An error occurred. :(</h2>
+                        <div>
+                            <span class=tab>Error: <%= message %></span><br /><br />
+                            <span class=tab>Status: <%= error %></span><br /><br />
+                        </div>
+                        <h4><a href="<%= settings.chRoot %>/">Back to Home</a></h4>
+                    </div>
+                </div>
+            </div>
+			<div class="footer text-with-background text-centered">
+				<% include partials/footer %>
+			</div>
+        </div>
+    </body>
+</html>
