@@ -9,8 +9,8 @@
 (function(global) {
     'use strict';
     // Set the date we're counting down to
-    var countDownDate = new Date("Nov 6, 2017 10:00:00").getTime();
-    var countUpDate = new Date("Dec 4, 2017 10:00:00").getTime();
+    var countDownDate = document.getElementById('icostart') || new Date().getTime();
+    var countUpDate = document.getElementById('icostop') || new Date().getTime();
 
     function pad(n, width, z) {
         z = z || '0';

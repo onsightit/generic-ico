@@ -44,21 +44,21 @@
   "icoRoundDurations": [6,24,48,48,48,48,48,48,48,48,48,48], // hours for each round
 
   // BTC public send to addresses (one per round)
-  "icoBtcAddresses": ["3A7xNVAr12xchjiHENKJ9QeBJ8sssFL35s",
-                      "3JrxgJdmhL7RJ7xJF9Suwuf7qzGy5x8Tq4",
-                      "3KSXMS4kFNTfJvJWRuqwNBz59Pgn5jA6Sj",
-                      "36huWBSZaaDL3uVnH6zRBJmeAkQGYHpmcg",
-                      "3FoWFR13ihB4x1x9tb57oHgUpbTP7rCZ35",
-                      "3QQZx5nwEkWpJjJbcUxDx3Ly3BsYbG7pzw",
-                      "35iyG7PnkHiL1QXeYEsmBFaCvzVAxYRcff",
-                      "3Q7yj57LZ6gsWUTLyLcx1rAw7sdynisNmw",
-                      "38XWyA2PKfkcodB9GbpaCMn4waGwj8BR7p",
-                      "36ah36KQLiPNJ3necLxMoYZw23NCZJ3jkd",
-                      "3FksSWqZV8pdfYQBNkYf7FkA19iakLkCDR",
-                      "3DkkGzw77v4ehSonsCh6XwRm35JeSRk6TF"],
+  "icoBtcAddresses": ["",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""],
 
   // Ethereum public contract addresses
-  "icoEthAddress": "0x006628c59c6B8871383eC089290fc5C7BF3eA7C6",
+  "icoEthAddress": "",
 
   // Coin name / page heading
   "coinName": "GenericToken",

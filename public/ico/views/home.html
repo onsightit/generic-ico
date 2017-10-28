@@ -1,6 +1,8 @@
 <div class="well" data-bind="with:home">
     <!-- HOME -->
     <h1 class="text-primary">Welcome to the <span data-bind="text: wallet.settings().appTitle"></span>, <span data-bind="text: first_name()"></span>!</h1>
+    <div id="icostart" data-bind="text: wallet.settings().icoStart"></div>
+    <div id="icostop" data-bind="text: wallet.settings().icoStop"></div>
     <div class"countdown-sm" id="countdown-sm"></div>
     <p>TOKEN SALE PROGRESS</p>
     <div class="progress">
