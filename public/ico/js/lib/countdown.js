@@ -2,7 +2,10 @@
  * Countdown Timer.
  * 
  * Usage:
- * <p id="countdown"></p>
+ * 
+ * <div style="visibility:hidden; line-height=0px;" id="countdown-start">Oct 23, 2017 10:00:00</div>
+ * <div style="visibility:hidden; line-height=0px;" id="countdown-stop">Nov 20, 2017 10:00:00</div>
+ * <div class="countdown" id="countdown"></div>
  * 
  */
 
@@ -15,10 +18,10 @@
     }
 
     var x = setInterval(function() {
-        if (document.getElementById("icostart")) {
+        if (document.getElementById("countdown-start")) {
             // Set the date we're counting down to
-            var countDownDate = new Date(document.getElementById("icostart").innerHTML || new Date()).getTime();
-            var countUpDate = new Date(document.getElementById("icostop").innerHTML || new Date()).getTime();
+            var countDownDate = new Date(document.getElementById("countdown-start").innerHTML || new Date()).getTime();
+            var countUpDate = new Date(document.getElementById("countdown-stop").innerHTML || new Date()).getTime();
 
             var now = new Date().getTime();
             var distance = Math.abs(countDownDate - now);

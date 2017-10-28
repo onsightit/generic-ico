@@ -47,11 +47,11 @@ define(['knockout',
             self.first_name(self.wallet.User().profile.first_name || "Investor");
 
             if (self.wallet.settings().icoStart && self.wallet.settings().icoStop && self.wallet.settings().icoRoundDurations) {
-                self.icoStart(new Date(self.wallet.settings().icoStart).getTime());
-                self.icoStop(new Date(self.wallet.settings().icoStop).getTime());
+                self.icoStart(self.wallet.settings().icoStart);
+                self.icoStop(self.wallet.settings().icoStop);
                 var now = new Date().getTime();
-                var start = self.icoStart();
-                var stop = self.icoStop();
+                var start = new Date(self.icoStart()).getTime();
+                var stop = new Date(self.icoStop()).getTime();
                 var distance = Math.round(Math.abs((start - now) / 1000)); // Difference in seconds
                 var durations = (typeof self.wallet.settings().icoRoundDurations === 'object' ? self.wallet.settings().icoRoundDurations : [6,24,48]);
                 var round = 0;

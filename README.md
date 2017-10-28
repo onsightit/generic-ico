@@ -53,3 +53,7 @@ Linux:
  > ico.sh
 
  (If 'daemon' is not installed, please consult your Linux distro's documentation for installing 'daemon'.)
+
+## License
+
+GNU V3 (See LICENSE file.)
