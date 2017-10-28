@@ -84,6 +84,11 @@ sup {
     color: #eee;
 }
 
+.countdown-dates {
+    line-height: 0px;
+    visibility: hidden;
+}
+
 .countdown-sm {
     height: 50px;
     line-height: 100%;

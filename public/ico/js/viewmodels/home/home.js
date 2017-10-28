@@ -14,6 +14,8 @@ define(['knockout',
         self.first_name = ko.observable("");
         self.last_name = ko.observable("");
 
+        self.icoStart = ko.observable("");
+        self.icoStop = ko.observable("");
         self.ethaddress = ko.observable("");
         self.btcaddress = ko.observable("");
         self.ethQrCode = ko.observable("");
@@ -43,11 +45,13 @@ define(['knockout',
                 }
             }
             self.first_name(self.wallet.User().profile.first_name || "Investor");
-            
+
             if (self.wallet.settings().icoStart && self.wallet.settings().icoStop && self.wallet.settings().icoRoundDurations) {
+                self.icoStart(new Date(self.wallet.settings().icoStart).getTime());
+                self.icoStop(new Date(self.wallet.settings().icoStop).getTime());
                 var now = new Date().getTime();
-                var start = new Date(self.wallet.settings().icoStart).getTime();
-                var stop = new Date(self.wallet.settings().icoStop).getTime();
+                var start = self.icoStart();
+                var stop = self.icoStop();
                 var distance = Math.round(Math.abs((start - now) / 1000)); // Difference in seconds
                 var durations = (typeof self.wallet.settings().icoRoundDurations === 'object' ? self.wallet.settings().icoRoundDurations : [6,24,48]);
                 var round = 0;

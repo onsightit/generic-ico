@@ -1,9 +1,9 @@
 <div class="well" data-bind="with:home">
     <!-- HOME -->
     <h1 class="text-primary">Welcome to the <span data-bind="text: wallet.settings().appTitle"></span>, <span data-bind="text: first_name()"></span>!</h1>
-    <div id="icostart" data-bind="text: wallet.settings().icoStart"></div>
-    <div id="icostop" data-bind="text: wallet.settings().icoStop"></div>
-    <div class"countdown-sm" id="countdown-sm"></div>
+    <div class="countdown-dates" id="icostart" data-bind="text: icoStart()"></div>
+    <div class="countdown-dates" id="icostop" data-bind="text: icoStop()"></div>
+    <div class="countdown-sm" id="countdown-sm"></div>
     <p>TOKEN SALE PROGRESS</p>
     <div class="progress">
         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="400000000" data-bind="style: { width: tokenProgress() }">

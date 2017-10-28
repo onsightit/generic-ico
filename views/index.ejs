@@ -14,7 +14,18 @@
 					<div class="description"><%= settings.appDescription %></div>
 					<!-- SIGNUP AND LOGIN -->
 					<div class="jumbotron text-center">
-						<div class"countdown" id="countdown"></div>
+					<% if (new Date().getTime() < new Date(settings.icoStart).getTime()) { %>
+						<div class="description">ICO BEGINS <%= settings.icoStart %></div>
+					<% } else { %>
+						<% if (new Date().getTime() < new Date(settings.icoStop).getTime()) { %>
+							<div class="description">ICO IS IN PROGRESS</div>
+						<% } else { %>
+							<div class="description">ICO IS CLOSED</div>
+						<% } %>
+					<% } %>
+						<div class="countdown-dates" id="icostart"><%= settings.icoStart %></div>
+						<div class="countdown-dates" id="icostop"><%= settings.icoStop %></div>
+						<div class="countdown" id="countdown"></div>
 					<!-- show any status messages from server -->
 					<% if (settings.status.length > 0) { %>
 						<div class="alert alert-danger"><%= settings.status %></div>
