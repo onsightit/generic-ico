@@ -103,7 +103,7 @@ define(['knockout',
     };
 
     // Called once at startup.
-    walletType.prototype.initNode = function(chRoot){
+    walletType.prototype.initNode = function(chRoot) {
         var self = this;
         // Catch-22: We don't know if Generic-ICO is chRoot'd to /public or /public/ico,
         // because 'settings' has not been set yet, so we need to test for a failure first
@@ -112,7 +112,7 @@ define(['knockout',
                                              chRoot, // unknown chRoot on first call.
                                              'production'); // Gets the wallet info and settings quietly
         $.when(getNodeInfoCommand.execute())
-            .done(function(getNodeInfoData){
+            .done(function(getNodeInfoData) {
                 if (typeof getNodeInfoData.settings.wallet.rpchost !== 'undefined'){
                     self.node_id(getNodeInfoData.settings.wallet.rpchost);
                     self.settings(getNodeInfoData.settings);

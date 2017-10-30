@@ -128,9 +128,9 @@
   // This setting is used to make RPC calls to the wallet daemon.
   "wallet": {
     "rpcuser": "rpcuser",
-    "rpcpassword": "rpcpassword",
+    "rpcpassword": "rpcpass",
     "rpchost": "127.0.0.1",
-    "rpcport": 19184,
+    "rpcport": 8545,
     "ssl": false,
     "rejectUnauthorized": false,
     "strictSSL": false
@@ -153,9 +153,6 @@
 
   // Secret used for keyring and cookies
   "supersecret": "super secret pass phrase",
-
-  // Storage temp for uploads
-  "storageTemp": "/tmp/",
 
   // Google reCaptcha private/public keys
   "reCaptchaSecret":  "",

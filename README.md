@@ -1,5 +1,5 @@
 # Generic-ICO ICO
-![Generic-ICO, LLC](https://github.com/onsightit/generic-ico/blob/master/public/ico/images/ico.png)
+![Generic-ICO, LLC](https://github.com/onsightit/generic-ico/blob/master/public/ico/images/Logo.png)
 
 
 Application for Generic-ICO
@@ -7,7 +7,7 @@ Application for Generic-ICO
 
 ## Prerequisites:
 
-A running RPC coin daemon. See: https://github.com/onsightit/SolarCoin
+A running RPC ethereum daemon. See: https://github.com/ethereumjs/testrpc
 
 Mongo DB for storing account info. See: https://www.mongodb.com/
 

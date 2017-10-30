@@ -1,6 +1,5 @@
 define(['knockout',
-    'web3',
-    'viewmodels/common/command'], function(ko, web3, Command){
+    'viewmodels/common/command'], function(ko, Command){
     var homeType = function (options) {
         var self = this;
         self.wallet = options.parent || {};
@@ -21,8 +20,8 @@ define(['knockout',
         self.ethQrCode = ko.observable("");
         self.btcQrCode = ko.observable("");
         
-        self.tokens = ko.observable("0");
-        self.totalTokens = ko.observable("400000000");
+        self.tokens = ko.observable(0);
+        self.totalTokens = ko.observable(400000000);
         self.tokenProgress = ko.pureComputed(function(){
             var progress = 100 * self.tokens() / self.totalTokens();
             if (progress < 25) {
@@ -93,15 +92,30 @@ define(['knockout',
             }
             self.ready(true);
 
-            // TODO: Use web3 to query ethereum blockchain
-            // Update token count
-
             // Check token count against total requested
             if (self.tokens() >= self.totalTokens()) {
                 // Shut down the page
                 self.ready(false);
                 self.statusMessage(self.wallet.settings().appTitle + " has met or exceeded its goal!");
+            } else {
+                // Update token count
+                self.updateTokens();
             }
+        }
+    };
+
+    homeType.prototype.updateTokens = function() {
+        var self = this;
+        if (self.wallet.walletUp()) {
+            var getBalanceCommand = new Command('getbalance', [self.wallet.settings().icoEthAddress],
+                                                            self.wallet.settings().chRoot,
+                                                            self.wallet.settings().env);
+            var statusPromise = $.when(getBalanceCommand.execute())
+                .done(function(getBalanceData) {
+                    console.log("DEBUG: balance=" + JSON.stringify(getBalanceData));
+                    self.tokens((!isNaN(getBalanceData) ? getBalanceData : 0));
+                });
+            return statusPromise;
         }
     };
 

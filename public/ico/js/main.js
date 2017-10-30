@@ -1,20 +1,20 @@
 require.config({
     paths: {
-        jquery: 'lib/jquery.min',
+        jquery: "lib/jquery.min",
         sammy: "lib/sammy",
         moment: "lib/moment.min",
-        bootstrap: 'lib/bootstrap/dist/js/bootstrap.min',
-        npm: 'lib/npm',
-        "bootstrap-editable": 'lib/bootstrap-editable-customized.min',
-        "bootstrap-slider": 'lib/bootstrap-slider.min',
-        knockout: 'lib/knockout',
-        "knockout-amd-helpers": 'lib/knockout-amd-helpers',
-        "knockout-validation": 'lib/knockout.validation.min',
-        "knockout-x-editable": 'lib/knockout.x-editable.min',
-        "knockout-file-bindings": 'lib/knockout-file-bindings',
+        bootstrap: "lib/bootstrap/dist/js/bootstrap.min",
+        npm: "lib/npm",
+        "bootstrap-editable": "lib/bootstrap-editable-customized.min",
+        "bootstrap-slider": "lib/bootstrap-slider.min",
+        knockout: "lib/knockout",
+        "knockout-amd-helpers": "lib/knockout-amd-helpers",
+        "knockout-validation": "lib/knockout.validation.min",
+        "knockout-x-editable": "lib/knockout.x-editable.min",
+        "knockout-file-bindings": "lib/knockout-file-bindings",
         "socket.io": "lib/socket.io.min",
         text: "lib/text",
-        patterns: 'extenders/patterns'
+        patterns: "extenders/patterns"
     }
 });
 
