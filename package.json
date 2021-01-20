@@ -91,7 +91,7 @@
     "restify": "^4.3.1",
     "safe-buffer": "^5.1.1",
     "serve-favicon": "^2.4.3",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.4.0",
     "through": "^2.3.8",
     "util": "^0.10.3",
     "uuid": "^2.0.3",
